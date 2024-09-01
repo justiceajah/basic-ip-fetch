@@ -12,7 +12,7 @@ const Home: React.FC = () => {
       .get("http://ip.jsontest.com/")
       .then((response) => {
         const urlObject = { ipAddress: response.data };
-        console.log("Hello");
+      
         router.navigate({
           search: (prev) => ({ ...prev, ...urlObject }),
         });
