@@ -9,7 +9,7 @@ const Home: React.FC = () => {
 
   useEffect(() => {
     axios
-      .get("https://ip.jsontest.com/")
+      .get("http://ip.jsontest.com/")
       .then((response) => {
         const urlObject = { ipAddress: response.data };
       
